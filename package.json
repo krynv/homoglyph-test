@@ -1,0 +1,16 @@
+{
+    "name": "homoglyph-test",
+    "version": "1.0.0",
+    "description": "Fetches a list of homoglyphs from the Unicode database and tests them against a given string.",
+    "main": "index.js",
+    "dependencies": {
+        "axios": "^0.27.2"
+    },
+    "scripts": {
+        "start": "clear && node index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Vitaliy Krynytskyy",
+    "license": "ISC"
+}

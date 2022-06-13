@@ -52,7 +52,7 @@ const containsConfusables = givenString => {
  * getConfusables(myString);
  * // returns [{ char: 'e' }, { char: 'g' }, { char: 'r' }, { char: 'e' }, { char: 'ꜱ', similarTo: 's' }, { char: 'ꜱ', similarTo: 's' }]
  * @param {String} givenString - The given string to check against 
- * @returns {Array} - An array of characters and what they are similar to (if they are confusable)
+ * @returns {Array} - An array of characters and what they are similar to (if they are confusable) or undefined
  */
 const getConfusables = givenString => {
     const skeleton = generateSkeleton(givenString);
@@ -92,6 +92,7 @@ const rectifyConfusion = givenString => {
 };
 
 module.exports = {
+    generateSkeleton,
     containsConfusables,
     getConfusables,
     rectifyConfusion,
